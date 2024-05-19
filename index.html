@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma Personalizada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="title">Alarma Personalizada</h1>
+        <div class="input-container">
+            <input type="time" id="alarmTime" placeholder="Hora">
+            <button onclick="startRecording()">Grabar Mensaje</button>
+            <button onclick="stopRecording()">Detener Grabación</button>
+            <button onclick="setAlarm()">Programar Alarma</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="reminderMessage" placeholder="Mensaje de Recordatorio">
+            <button onclick="startReminderRecording()">Grabar Recordatorio</button>
+            <button onclick="stopReminderRecording()">Detener Grabación Recordatorio</button>
+            <button onclick="setReminder()">Programar Recordatorio</button>
+        </div>
+        <h3>Alarmas Programadas:</h3>
+        <ul id="alarmList"></ul>
+        <h3>Recordatorios Programados:</h3>
+        <ul id="reminderList"></ul>
+        <button onclick="stopPlayback()" id="stopPlaybackButton" style="display:none;">Detener Reproducción</button>
+        <button onclick="stopReminders()" id="stopRemindersButton" style="display:none;">Detener Recordatorios</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.app-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 3px solid #ff6f61;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffbaba;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #e85d50;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#alarmList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#alarmList li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ffbaba;
+    font-size: 1.2em;
+    color: #555;
+}
